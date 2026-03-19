@@ -61,6 +61,9 @@ bindsym $mod+Return exec ghostty
 # start a Firefox
 bindsym $mod+Shift+Return exec firefox
 
+# Change keyboardlayout
+exec_always --no-startup-id setxkbmap -layout us,se -option grp:alt_shift_toggle
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
