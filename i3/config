@@ -61,19 +61,20 @@ bindsym $mod+Return exec ghostty
 # start a Firefox
 bindsym $mod+Shift+Return exec firefox
 
-# Change keyboardlayout
+# TODO: Change keyboardlayout depending on sway or i3
+# I3:
 exec_always --no-startup-id setxkbmap -layout us,se -option grp:alt_shift_toggle
-
-input "type:keyboard" {
-    xkb_layout "us,se"
-    xkb_options "grp:alt_shift_toggle"
-}
+# Sway:
+# input "type:keyboard" {
+#     xkb_layout "us,se"
+#     xkb_options "grp:alt_shift_toggle"
+# }
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # lock system
-bindsym $mod+Escape exec --no-startup-id i3lock
+bindsym $mod+Escape exec --no-startup-id ~/.dotfiles/i3/lock.sh
 
 # set caps lock to escape
 exec --no-startup-id setxkbmap -option caps:escape
