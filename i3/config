@@ -64,6 +64,11 @@ bindsym $mod+Shift+Return exec firefox
 # Change keyboardlayout
 exec_always --no-startup-id setxkbmap -layout us,se -option grp:alt_shift_toggle
 
+input "type:keyboard" {
+    xkb_layout "us,se"
+    xkb_options "grp:alt_shift_toggle"
+}
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
