@@ -8,10 +8,8 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [[on-window-detected]]
-if.app-id="com.mitchellh.ghostty"
-run= [
-  "layout tiling",
-]
+if.app-id = "com.mitchellh.ghostty"
+run = ["layout tiling"]
 
 [mode.main.binding]
 # See: https://nikitabobko.github.io/AeroSpace/goodness#open-a-new-window-with-applescript
@@ -45,8 +43,8 @@ alt-v = 'split vertical'
 
 # alt-f = 'fullscreen'
 
-alt-s = 'layout v_accordion' # 'layout stacking' in i3
-alt-w = 'layout h_accordion' # 'layout tabbed' in i3
+alt-s = 'layout v_accordion'               # 'layout stacking' in i3
+alt-w = 'layout h_accordion'               # 'layout tabbed' in i3
 alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 
 alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
@@ -59,17 +57,17 @@ alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
 # alt-a = 'focus parent'
 
-cmd-sectionSign = 'workspace --auto-back-and-forth 0'  # Desktop/Misc
-cmd-1 = 'workspace --auto-back-and-forth 1'  # Notes
-cmd-2 = 'workspace --auto-back-and-forth 2'  # Terminal
-cmd-3 = 'workspace --auto-back-and-forth 3'  # Browser
-cmd-4 = 'workspace --auto-back-and-forth 4'  # AltBrowser
-cmd-5 = 'workspace --auto-back-and-forth 5'  # Remote
-cmd-6 = 'workspace --auto-back-and-forth 6'  # Database
-cmd-7 = 'workspace --auto-back-and-forth 7'  # Chat
-cmd-8 = 'workspace --auto-back-and-forth 8'  # Mail
-cmd-9 = 'workspace --auto-back-and-forth 9'  # Music
-cmd-0 = 'workspace --auto-back-and-forth 10' # Secrets
+cmd-sectionSign = 'workspace --auto-back-and-forth 0' # Desktop/Misc
+cmd-1 = 'workspace --auto-back-and-forth 1'
+cmd-2 = 'workspace --auto-back-and-forth 2'
+cmd-3 = 'workspace --auto-back-and-forth 3'
+cmd-4 = 'workspace --auto-back-and-forth 4'
+cmd-5 = 'workspace --auto-back-and-forth 5'
+cmd-6 = 'workspace --auto-back-and-forth 6'
+cmd-7 = 'workspace --auto-back-and-forth 7'
+cmd-8 = 'workspace --auto-back-and-forth 8'
+cmd-9 = 'workspace --auto-back-and-forth 9'
+cmd-0 = 'workspace --auto-back-and-forth 10'
 
 cmd-shift-sectionSign = 'move-node-to-workspace 0'
 cmd-shift-1 = 'move-node-to-workspace 1'
@@ -120,4 +118,3 @@ k = 'resize height -50'
 l = 'resize width +50'
 enter = 'mode main'
 esc = 'mode main'
-
