@@ -57,7 +57,7 @@ alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
 # alt-a = 'focus parent'
 
-cmd-sectionSign = 'workspace --auto-back-and-forth 0' # Desktop/Misc
+cmd-sectionSign = 'workspace --auto-back-and-forth 0'
 cmd-1 = 'workspace --auto-back-and-forth 1'
 cmd-2 = 'workspace --auto-back-and-forth 2'
 cmd-3 = 'workspace --auto-back-and-forth 3'
