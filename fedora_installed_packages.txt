@@ -1,0 +1,1 @@
+jetbrains-mono-fonts-all valgrind gcc mariadb mariadb-server php-mysqlnd composer php npm ruby pip python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fd-find fzf neovim vim vi git btop htop bat scrot tmux
