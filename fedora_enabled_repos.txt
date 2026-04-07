@@ -11,13 +11,10 @@ ghostty
 dnf copr enable scottames/ghostty
 
 
-discord
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
-
 lazygit
 sudo dnf copr enable dejan/lazygit
 
 
+discord
 spotify
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
