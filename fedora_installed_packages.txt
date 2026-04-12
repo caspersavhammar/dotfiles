@@ -1,1 +1,1 @@
-jetbrains-mono-fonts-all valgrind gdb gcc mariadb mariadb-server php-mysqlnd composer php npm pip python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fd-find fzf neovim vim vi git btop htop bat scrot tmux ghostty firefox
+jetbrains-mono-fonts-all valgrind gdb gcc mariadb mariadb-server php-mysqlnd composer php npm pip python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fd-find fzf neovim vim vi git btop htop bat scrot tmux firefox
