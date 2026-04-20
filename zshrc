@@ -115,4 +115,4 @@ setopt HIST_SAVE_NO_DUPS
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-export PATH=$PATH:/home/casav929/Documents/pintos/utils
+export PATH=$PATH:/home/casav/Documents/pintos/utils
