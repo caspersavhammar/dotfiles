@@ -24,7 +24,7 @@ set $rofi_cmd rofi \
         -terminal '$term'
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
-# TODO: add window with the next release of rofi-wayland
+
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 
 ### Output configuration
@@ -108,6 +108,7 @@ input "type:keyboard" {
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
 
+    input type:keyboard xkb_numlock enabled
 
     # Screenshotting tool:
     # bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%H%M%S.png' -e 'mv $f ~/Downloads/'
