@@ -51,7 +51,7 @@ fi
 
 alias nv='nvim'
 alias conf='cd ~/.config'
-alias zshconf="mate ~/.zshrc"
+alias zshconf="nvim ~/.zshrc"
 
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
