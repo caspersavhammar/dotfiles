@@ -88,7 +88,7 @@ input "type:touchpad" {
     # Start a terminal
     bindsym $mod+Return exec $term
 
-    bindsym $mod+Escape exec swaylock -i /home/casav929/Pictures/background/Artimes.jpeg --scaling fill
+    bindsym $mod+Escape exec swaylock -i ~/Pictures/background/Artemis.jpeg --scaling fill
 
     # start your browser
     bindsym $mod+Shift+Return exec firefox
