@@ -49,6 +49,7 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
+alias sshs='ssh casav@100.82.138.77'
 alias nv='nvim'
 alias conf='cd ~/.config'
 alias zshconf="nvim ~/.zshrc"
@@ -62,4 +63,3 @@ setopt HIST_SAVE_NO_DUPS
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-export PATH=$PATH:/home/casav929/Documents/pintos/utils
