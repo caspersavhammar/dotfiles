@@ -51,6 +51,7 @@ fi
 
 alias sshs='ssh casav@100.82.138.77'
 alias nv='nvim'
+alias ff='fastfetch'
 alias conf='cd ~/.config'
 alias zshconf="nvim ~/.zshrc"
 
