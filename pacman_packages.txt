@@ -1,1 +1,1 @@
-sudo pacman -S jetbrains-mono-fonts-all valgrind gdb gcc pip python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fd-find fzf neovim vim vi btop htop bat scrot tmux rofi typst ghostty discord 
+sudo pacman -S lazygit swaybg swaylock ttf-jetbrains-mono-nerd valgrind gdb gcc python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fzf neovim vim vi btop htop bat scrot tmux rofi typst ghostty discord 
