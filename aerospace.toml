@@ -1,3 +1,13 @@
+# Config version for compatibility and deprecations
+# See: https://nikitabobko.github.io/AeroSpace/guide#config-version
+config-version = 2
+
+# persistent-workspaces is intentionally left unset here.
+# Under config-version = 2, the fallback is an empty array, meaning
+# no workspace is force-kept-alive when empty — i.e. non-persistent
+# workspaces, which is the behavior being tried out.
+# See: https://nikitabobko.github.io/AeroSpace/guide#config-version-2
+
 start-at-login = true
 after-login-command = []
 
@@ -14,14 +24,14 @@ run = ["layout tiling"]
 [mode.main.binding]
 # See: https://nikitabobko.github.io/AeroSpace/goodness#open-a-new-window-with-applescript
 
-alt-enter = '''exec-and-forget osascript -e '
-tell application "Ghostty"
+alt-enter = '''exec-and-forget osascript -e \
+'tell application "Ghostty"
     set win to new window with configuration new surface configuration
 end tell'
 '''
 
-alt-shift-enter = '''exec-and-forget osascript -e '
-tell application "Safari"
+alt-shift-enter = '''exec-and-forget osascript -e \
+'tell application "Safari"
     make new document at end of documents
     activate
 end tell'
