@@ -50,6 +50,7 @@ fi
 # export ARCHFLAGS="-arch $(uname -m)"
 
 alias sshs='ssh casav@100.82.138.77'
+alias sshd='ssh casav@100.96.125.37'
 alias nv='nvim'
 alias ff='fastfetch'
 alias conf='cd ~/.config'
