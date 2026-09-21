@@ -48,6 +48,7 @@ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
+set -o vi
 
 alias sshs='ssh casav@100.82.138.77'
 alias sshd='ssh casav@100.96.125.37'
@@ -55,6 +56,8 @@ alias nv='nvim'
 alias ff='fastfetch'
 alias conf='cd ~/.config'
 alias zshconf="nvim ~/.zshrc"
+alias w++="g++ -std=c++20 -Wall -Wextra -pedantic -Weffc++"
+alias e++="g++ -std=c++20 -Wall -Wextra -pedantic -Weffc++ -Werror"
 
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
