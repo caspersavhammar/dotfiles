@@ -193,11 +193,11 @@ input "type:touchpad" {
     # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+    # bindsym $mod+Shift+minus move scratchpad
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+    # bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
@@ -246,6 +246,12 @@ bindsym $mod+r mode "resize"
 titlebar_padding 1
 titlebar_border_thickness 0
 font pango:JetBrains Mono 8
+
+# class             border   background text     indicator child_border
+client.focused          #c9545d  #c9545d    #ffffff  #e5747d   #c9545d
+client.focused_inactive #333333  #5f676a    #ffffff  #484e50   #333333
+client.unfocused        #333333  #222222    #888888  #292d2e   #222222
+client.urgent           #c9545d  #c9545d    #ffffff  #e5747d   #c9545d
 
 bar {
     swaybar_command waybar
