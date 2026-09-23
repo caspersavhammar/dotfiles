@@ -103,7 +103,8 @@ input "type:touchpad" {
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Turn screen off
-    bindsym $mod+p exec swaymsg "output * power off" && swayidle -w -d timeout 1 'true' resume 'swaymsg "output * power on"' && pkill -f 'swayidle -w -d'
+    # bindsym $mod+p exec swaymsg "output * power off" && swayidle -w -d timeout 1 'true' resume 'swaymsg "output * power on"' && pkill -f 'swayidle -w -d'
+    bindsym $mod+p exec powerprofilesctl set power-saver && swaymsg "output * power off" && swayidle -w -d timeout 1 'true' resume 'swaymsg "output * power on" && powerprofilesctl set balanced' && pkill -f 'swayidle -w -d'
 
     input type:keyboard xkb_numlock enabled
 
