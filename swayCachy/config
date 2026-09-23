@@ -248,10 +248,10 @@ titlebar_border_thickness 0
 font pango:JetBrains Mono 8
 
 # class             border   background text     indicator child_border
-client.focused          #c9545d  #c9545d    #ffffff  #e5747d   #c9545d
+client.focused          #9e3a42  #9e3a42    #ffffff  #b84d56   #9e3a42
 client.focused_inactive #333333  #5f676a    #ffffff  #484e50   #333333
 client.unfocused        #333333  #222222    #888888  #292d2e   #222222
-client.urgent           #c9545d  #c9545d    #ffffff  #e5747d   #c9545d
+client.urgent           #9e3a42  #9e3a42    #ffffff  #b84d56   #9e3a42
 
 bar {
     swaybar_command waybar
