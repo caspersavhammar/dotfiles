@@ -16,6 +16,7 @@
     "memory",
     "battery",
     "tray",
+    "sway/language",
     "clock",
   ],
   "sway/workspaces": {
