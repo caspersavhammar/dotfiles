@@ -11,6 +11,7 @@
     "pulseaudio",
     "network",
     "power-profiles-daemon",
+    "backlight",
     "cpu",
     "memory",
     "battery",
@@ -93,6 +94,11 @@
       "balanced": "",
       "power-saver": "",
     },
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
   },
   "custom/spotify": {
     "format": " {}",
