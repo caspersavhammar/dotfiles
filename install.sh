@@ -13,7 +13,7 @@ rm .zshrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 sudo pacman -Syu
-sudo pacman -S gnome-calendar dolphin wl-mirror brighnessctl npm lazygit swaync swaybg swaylock ttf-jetbrains-mono-nerd valgrind gdb gcc python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fzf neovim vim vi btop htop bat scrot tmux rofi typst ghostty discord \ 
+sudo pacman -S gnome-calendar gnome-control-center gnome-online-accounts evolution-data-server gvfs-goa dolphin wl-mirror brighnessctl npm lazygit swaync swaybg swaylock ttf-jetbrains-mono-nerd valgrind gdb gcc python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fzf neovim vim vi btop htop bat scrot tmux rofi typst ghostty discord \ 
 
 cd ~/.config
 
