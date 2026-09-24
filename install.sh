@@ -1,12 +1,13 @@
 cd ~
 
-git clone git@github.com:caspersavhammar/dotfiles.git
-mv dotfiles .dotfiles
+# DO THIS!
+#git clone git@github.com:caspersavhammar/dotfiles.git
+#mv dotfiles .dotfiles
+
 rm -rf .config/sway .config/waybar
 ln -s ~/.dotfiles/swayCachy ~/.config/sway
 ln -s ~/.dotfiles/waybarSway ~/.config/waybar
-mkdir Pictures
-mkdir Pictures/background
+mkdir -p Pictures/background
 ln -s ~/.dotfiles/Artemis.jpeg ~/Pictures/background
 rm .zshrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
@@ -31,3 +32,5 @@ cd ..
 rm -rf paru
 paru
 paru -S zsh-vi-mode visual-studio-code-bin spotify
+
+# install oh-my-zsh: https://ohmyz.sh/
