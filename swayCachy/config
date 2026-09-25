@@ -241,10 +241,8 @@ bindsym $mod+r mode "resize"
 ## Status Bar: ##
 #################
 
-# Make title bars smaller
-titlebar_padding 1
-titlebar_border_thickness 0
-font pango:JetBrains Mono 8
+default_border pixel 2
+default_floating_border pixel 2
 
 # class             border   background text     indicator child_border
 client.focused          #9e3a42  #9e3a42    #ffffff  #b84d56   #9e3a42

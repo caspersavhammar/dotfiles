@@ -34,8 +34,9 @@ window#waybar {
 }
 
 #mode {
-  background: #64727d;
-  border-bottom: 3px solid white;
+  color: #c9545d;
+  border-top: 2px solid #c9545d;
+  border-bottom: 2px solid #c9545d;
 }
 
 #pulseaudio,
