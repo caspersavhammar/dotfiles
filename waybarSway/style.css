@@ -38,71 +38,105 @@ window#waybar {
   border-bottom: 3px solid white;
 }
 
-#clock,
-#battery,
+#pulseaudio,
+#network,
 #cpu,
 #memory,
-#network,
-#pulseaudio,
 #custom-spotify,
+#battery,
 #tray,
+#clock,
 #mode {
   padding: 0 3px;
   margin: 0 2px;
 }
 
-#clock {
-  font-weight: bold;
+#pulseaudio {
+  background-color: #f1c40f;
+  color: #000000;
 }
 
-#battery {
+#pulseaudio.muted {
+  background-color: #90b1b1;
+  color: #2a5c45;
 }
 
-#battery icon {
-  color: red;
-}
-
-#battery.charging {
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: black;
-  }
-}
-
-#battery.warning:not(.charging) {
-  color: white;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-#cpu {
-}
-
-#memory {
+#pulseaudio:hover {
+  background-color: #a37800;
 }
 
 #network {
+  background-color: #2980b9;
 }
 
 #network.disconnected {
   background: #f53c3c;
 }
 
-#pulseaudio {
+#power-profiles-daemon.performance {
+  background-color: #f53c3c;
+  color: #ffffff;
 }
 
-#pulseaudio.muted {
+#power-profiles-daemon.balanced {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+#power-profiles-daemon.power-saver {
+  background-color: #2ecc71;
+  color: #000000;
+}
+
+#cpu {
+  background-color: #2ecc71;
+  color: #000000;
+}
+
+#memory {
+  background-color: #9b59b6;
+}
+
+#backlight {
+  background-color: #90b1b1;
+}
+
+#battery {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #ffffff;
+  background-color: #26a65b;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#tray {
+}
+
+#clock {
+  font-weight: bold;
 }
 
 #custom-spotify {
   color: rgb(102, 220, 105);
-}
-
-#tray {
 }
