@@ -12,6 +12,7 @@ ln -s ~/.dotfiles/Artemis.jpeg ~/Pictures/background
 rm ~/.zshrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/rofi/ ~/.local/share/
 sudo pacman -Syu
 sudo pacman -S dolphin wl-mirror brighnessctl npm lazygit swaync swaybg swaylock ttf-jetbrains-mono-nerd valgrind gdb gcc python zsh-autosuggestions zsh-syntax-highlighting zsh lua luarocks okular fastfetch fzf neovim vim vi btop htop bat scrot tmux rofi typst ghostty discord \ 
 
