@@ -50,12 +50,43 @@
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>",
   },
-  "tray": {
-    // "icon-size": 21,
-    "spacing": 10,
+  "pulseaudio": {
+    //"scroll-step": 1,
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""],
+    },
+    "on-click": "pavucontrol",
   },
-  "clock": {
-    "format-alt": "{:%Y-%m-%d}",
+  "network": {
+    // "interface": "wlp2s0", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰈁",
+    "format-disconnected": "Disconnected ⚠",
+  },
+  "power-profiles-daemon": {
+    "format": "|{icon}|",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
   },
   "cpu": {
     "format": "{usage}% ",
@@ -75,43 +106,12 @@
     // "format-full": "",
     "format-icons": ["", "", "", "", ""],
   },
-  "network": {
-    // "interface": "wlp2s0", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰈁",
-    "format-disconnected": "Disconnected ⚠",
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10,
   },
-  "pulseaudio": {
-    //"scroll-step": 1,
-    "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "",
-    "format-icons": {
-      "headphones": "",
-      "handsfree": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""],
-    },
-    "on-click": "pavucontrol",
-  },
-  "power-profiles-daemon": {
-    "format": "|{icon}|",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": "",
-    },
-  },
-  "backlight": {
-    // "device": "acpi_video1",
-    "format": "{percent}% {icon}",
-    "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
+  "clock": {
+    "format-alt": "{:%Y-%m-%d}",
   },
   "custom/spotify": {
     "format": "  {}",
