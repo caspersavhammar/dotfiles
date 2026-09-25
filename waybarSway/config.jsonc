@@ -1,5 +1,5 @@
 {
-  // source: https://github.com/Egosummiki/dotfiles/tree/master/waybar
+  // inspo: https://github.com/Egosummiki/dotfiles/tree/master/waybar
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar at the bottom of your screen
   "height": 24, // Waybar height
@@ -22,7 +22,19 @@
   "sway/workspaces": {
     "disable-scroll": true,
     "all-outputs": false,
-    "format": "{name}",
+    "format": "{name}:{windows}",
+    "format-window-separator": ",",
+    "window-rewrite-default": "{class}",
+    "window-rewrite": {
+      // link for icons: https://www.nerdfonts.com/cheat-sheet
+      "class<firefox>": "󰈹",
+      "title<nvim>": "",
+      "class<com.mitchellh.ghostty>": "",
+      "class<discord>": "",
+      "class<Spotify>": "",
+      "class<steam>": "",
+      "class<org.kde.dolphin>": "",
+    },
     "format-icons": {
       "1:web": "",
       "2:code": "",
@@ -102,7 +114,7 @@
     "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
   },
   "custom/spotify": {
-    "format": " {}",
+    "format": "  {}",
     "max-length": 40,
     "interval": 30, // Remove this if your script is endless and write in loop
     "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
