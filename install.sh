@@ -5,8 +5,8 @@ cd ~
 #mv dotfiles .dotfiles
 
 rm -rf ~/.config/sway .config/waybar
-ln -s ~/.dotfiles/swayCachy ~/.config/sway
-ln -s ~/.dotfiles/waybarSway ~/.config/waybar
+ln -s ~/.dotfiles/sway ~/.config/sway
+ln -s ~/.dotfiles/waybar ~/.config/waybar
 mkdir -p ~/Pictures/background
 ln -s ~/.dotfiles/Artemis.jpeg ~/Pictures/background
 rm ~/.zshrc
