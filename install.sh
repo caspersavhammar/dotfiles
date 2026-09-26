@@ -8,7 +8,7 @@ rm -rf ~/.config/sway .config/waybar
 ln -s ~/.dotfiles/sway ~/.config/sway
 ln -s ~/.dotfiles/waybar ~/.config/waybar
 mkdir -p ~/Pictures/background
-ln -s ~/.dotfiles/Artemis.jpeg ~/Pictures/background
+ln -s ~/.dotfiles/images/Artemis.jpeg ~/Pictures/background/
 rm ~/.zshrc
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
