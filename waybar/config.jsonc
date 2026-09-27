@@ -29,11 +29,15 @@
       // link for icons: https://www.nerdfonts.com/cheat-sheet
       "class<firefox>": "󰈹",
       "title<nvim>": "",
+      "title<tmux>": "",
+      "title<tmux a>": "",
       "class<com.mitchellh.ghostty>": "",
       "class<discord>": "",
       "class<Spotify>": "",
       "class<steam>": "",
+      "class<org.kde.okular>": "",
       "class<org.kde.dolphin>": "",
+      "class<blueman-manager>": "",
     },
     "format-icons": {
       "1:web": "",
