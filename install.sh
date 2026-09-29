@@ -30,6 +30,6 @@ makepkg -si
 cd ..
 rm -rf paru
 paru
-paru -S zsh-vi-mode visual-studio-code-bin spotify
+paru -S blipnet zsh-vi-mode visual-studio-code-bin spotify
 
 # install oh-my-zsh: https://ohmyz.sh/
