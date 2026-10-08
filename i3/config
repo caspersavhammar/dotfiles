@@ -55,8 +55,13 @@ bindsym Shift+Print exec --no-startup-id scrot -s '%Y-%m-%d-%H%M%S.png' -e 'mv $
 bindsym $mod+i exec hints
 bindsym $mod+y exec hints --mode scroll
 
+# Wallpaper
+exec --no-startup-id picom
+exec --no-startup-id sh -c 'sleep 1 && LD_LIBRARY_PATH=$HOME/.local/feh/usr/lib/x86_64-linux-gnu IMLIB2_LOADER_PATH=$HOME/.local/feh/usr/lib/x86_64-linux-gnu/imlib2/loaders $HOME/.local/feh/usr/bin/feh --bg-fill $HOME/Pictures/background/Artemis.jpeg'
+
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec ~/bin/ghostty
+bindsym $mod+Return exec GHOSTTY_RESOURCES_DIR=$HOME/.local/share/ghostty ~/bin/ghostty
 
 # start a Firefox
 bindsym $mod+Shift+Return exec firefox
